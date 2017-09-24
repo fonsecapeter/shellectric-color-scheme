@@ -1,31 +1,31 @@
 # --- special colors ---
 
 [Background]
-Color=34,41,44
+Color=57,63,67
 
 [BackgroundIntense]
-Color=34,41,44
+Color=57,63,67
 
 [Foreground]
-Color=228,209,163
+Color=244,230,194
 
 [ForegroundIntense]
-Color=228,209,163
+Color=244,230,194
 Bold=true
 
 # --- standard colors ---
 
 [Color0]
-Color=40,48,51
+Color=65,72,77
 
 [Color0Intense]
-Color=52,63,67
+Color=88,98,104
 
 [Color1]
-Color=238,77,122
+Color=209,67,67
 
 [Color1Intense]
-Color=209,67,67
+Color=238,77,122
 
 [Color2]
 Color=109,185,129
@@ -34,10 +34,10 @@ Color=109,185,129
 Color=92,156,124
 
 [Color3]
-Color=242,111,84
+Color=240,198,116
 
 [Color3Intense]
-Color=240,198,116
+Color=242,111,84
 
 [Color4]
 Color=79,114,183
@@ -58,10 +58,10 @@ Color=0,177,153
 Color=68,177,156
 
 [Color7]
-Color=136,136,136
+Color=130,144,151
 
 [Color7Intense]
-Color=255,255,255
+Color=164,174,178
 
 # --- general options ---
 
