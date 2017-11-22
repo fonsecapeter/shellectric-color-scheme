@@ -1,11 +1,14 @@
 {
   "name": "shellectric-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.1.0",
+  "description": "A retro, low-contrast dark theme.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "retro",
+    "low-contrast",
+    "dark"
   ],
   "repository": "https://github.com/atom/shellectric-syntax",
   "license": "MIT",

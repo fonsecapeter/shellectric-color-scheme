@@ -59,10 +59,10 @@ atom-text-editor {
 }
 
 .syntax--keyword {
-  color: @green;
+  color: @syntax-color-keyword;
 
   &.syntax--control {
-    color: @green;
+    color: @syntax-color-keyword;
   }
 
   &.syntax--operator {
@@ -79,26 +79,26 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @light-purple;
+  color: @light-gray;
 }
 
 .syntax--constant {
-  color: @cyan;
+  color: @syntax-color-constant;
 
   &.syntax--character.syntax--escape {
     color: @purple;
   }
 
   &.syntax--numeric {
-    color: @cyan;
+    color: @syntax-color-constant;
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @syntax-color-constant;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @purple;
   }
 
   &.syntax--other.syntax--placeholder {
@@ -107,10 +107,10 @@ atom-text-editor {
 }
 
 .syntax--variable {
-  color: @light-gray;
+  color: @syntax-color-variable;
 
   &.syntax--interpolation {
-    color: @light-gray;
+    color: @syntax-color-variable;
   }
 
   &.syntax--parameter.syntax--function {
@@ -124,15 +124,15 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @light-red;
+  color: @syntax-color-string;
 
 
   &.syntax--regexp {
-    color: @light-red;
+    color: @syntax-color-string;
   }
 
   &.syntax--other.syntax--link {
-    color: @blue;
+    color: @light-blue;
   }
 }
 
@@ -144,7 +144,7 @@ atom-text-editor {
     }
 
     &.syntax--string {
-        color: @light-red;
+        color: @syntax-color-string;
     }
 
     &.syntax--heading,
@@ -164,54 +164,53 @@ atom-text-editor {
   }
 
   &.syntax--section.syntax--embedded {
-    color: @light-gray;
+    color: @syntax-color-variable;
 
     &.syntax--begin, &.syntax--end {
       color: @light-purple;
     }
   }
-
 }
 
 .syntax--support {
   &.syntax--class {
-    color: @light-blue;
+    color: @syntax-color-class;
   }
 
   &.syntax--function  {
-    color: @light-blue;
+    color: @syntax-color-function;
 
     &.syntax--any-method {
-      color: @light-blue;
+      color: @syntax-color-method;
     }
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @light-blue;
+    color: @syntax-color-function;
   }
   &.syntax--name.syntax--type {
-    color: @light-blue;
+    color: @syntax-color-class;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @light-blue;
+    color: @syntax-color-class;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-blue;
+    color: @syntax-color-class;
   }
 
   &.syntax--name.syntax--section {
-    color: @light-blue;
+    color: @syntax-color-class;
   }
 
   &.syntax--name.syntax--tag {
-    color: @blue;
+    color: @syntax-color-tag;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @orange;
+    color: @syntax-color-attribute;
 
     &.syntax--id {
       color: @blue;
@@ -225,7 +224,7 @@ atom-text-editor {
   }
 
   &.syntax--link {
-    color: @blue;
+    color: @light-blue;
   }
 
   &.syntax--require {
@@ -241,23 +240,40 @@ atom-text-editor {
   }
 
   &.syntax--embedded {
-      color: @light-gray;
+    color: @light-gray;
   }
-
 }
 
 .syntax--none {
   color: @syntax-text-color;
 }
 
+&.syntax--link {
+  color: @light-blue;
+}
+
+.syntax--source.syntax--gfm .syntax--markup {
+  &.syntax--link {
+    color: @blue;
+  }
+
+  &.syntax--raw {
+    color: @purple;
+  }
+
+  &.syntax--strike {
+    color: @orange;
+  }
+}
+
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
+    color: @gray;
     font-weight: bold;
   }
 
   &.syntax--changed {
-    color: @purple;
+    color: @light-orange;
   }
 
   &.syntax--deleted {
@@ -269,8 +285,8 @@ atom-text-editor {
     font-style: italic;
   }
 
-  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @blue;
+  &.syntax--heading {
+    color: @light-gray;
   }
 
   &.syntax--inserted {
@@ -278,7 +294,7 @@ atom-text-editor {
   }
 
   &.syntax--list {
-    color: @red;
+    color: @light-orange;
   }
 
   &.syntax--quote {
@@ -286,14 +302,7 @@ atom-text-editor {
   }
 
   &.syntax--raw.syntax--inline {
-    color: @green;
-  }
-}
-
-.syntax--source.syntax--gfm .syntax--markup {
-  -webkit-font-smoothing: auto;
-  &.syntax--heading {
-    color: @green;
+    color: @purple;
   }
 }
 
@@ -303,12 +312,14 @@ atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
 }
 
+// Indent guide
+// Has issue #68 that hides the cursor
 .indent-guide-improved {
   background-color: @dark-gray;
   &.indent-guide-stack {
-    background-color: @dark-gray;
+    background-color: fadeout(@gray, 50%);
     &.indent-guide-active {
-      background-color: @gray;
+      background-color: fadeout(@light-gray, 50%);
     }
   }
 }

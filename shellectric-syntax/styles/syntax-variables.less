@@ -7,11 +7,12 @@
 @syntax-text-color: @camel;
 @syntax-cursor-color: white;
 @syntax-selection-color: @blue-gray;
+@syntax-selection-flash-color: @purple; // Color the selection is 'flashed' when you run find next
 @syntax-background-color: @very-dark-gray;
 
 // Guide colors
 @syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @gray;
+@syntax-indent-guide-color: @dark-gray;
 @syntax-invisible-character-color: @gray;
 
 // For find and replace markers
@@ -25,7 +26,22 @@
 @syntax-gutter-background-color-selected: @syntax-selection-color;
 
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
+@syntax-color-renamed: @light-blue;
 @syntax-color-added: @green;
-@syntax-color-modified: @orange;
+@syntax-color-modified: @light-orange;
 @syntax-color-removed: @red;
+
+// For language entity colors
+@syntax-color-variable: @light-gray;
+@syntax-color-constant: @cyan;
+@syntax-color-property: @orange;
+@syntax-color-value: @cyan;
+@syntax-color-function: @light-blue;
+@syntax-color-method: @syntax-color-function;
+@syntax-color-class: @syntax-color-function;
+@syntax-color-keyword: @green;
+@syntax-color-tag: @light-orange;
+@syntax-color-attribute: @orange;
+@syntax-color-import: @syntax-color-keyword;
+@syntax-color-snippet: @purple;
+@syntax-color-string: @light-red;
