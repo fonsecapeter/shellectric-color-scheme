@@ -14,5 +14,7 @@ These files are for osx/kde terminals. Check out the [atom](https://atom.io/) sy
     - Manual import `Profiles` > `Colors` > `Color Presets...` > `Import`
   - `Shellectric.terminal` (OSX Default Terminal)
     - Manual import `Profiles` > ⚙️ > `Import`
+  - `hyper_shellectric.js` (Hyper)
+      - Copy into your own `~/.hyper.js`
 
-> In case you're wondering, that font is [Peter Mono](https://github.com/fonsecapeter/peter_mono).
+> In case you're wondering, that font is [Brass Mono](https://github.com/fonsecapeter/brass_mono).
