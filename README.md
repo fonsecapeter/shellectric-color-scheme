@@ -4,7 +4,7 @@ Easy on the eyes, retro colors inspired by 70's design. 'Nuff said.
 
 Check out the [atom](https://atom.io/) syntax theme [here](https://github.com/fonsecapeter/shellectric-syntax) if atom's your cup of tea.
 
-![shellectric ruby](/media/shellectric-iterm.png "shellectric-iterm.png")
+![shellectric ruby](/media/shellectric-hyper.png "shellectric-hyper.png")
 ![shellectric ruby](/media/shellectric-vim.png "shellectric-vim.png")
 > In case you're wondering, that font is [Brass Mono](https://github.com/fonsecapeter/brass_mono).
 
