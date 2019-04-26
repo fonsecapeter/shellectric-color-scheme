@@ -15,8 +15,11 @@ Check out the [atom](https://atom.io/) syntax theme [here](https://github.com/fo
 
 - [Hyper](https://hyper.is/) `hyper_shellectric.js`
   - Copy into your own `~/.hyper.js`
+- [GNOME Terminal](https://help.gnome.org/users/gnome-terminal/stable/) `shellectric-gnome-term-profile.dconf`
+  - Import with `dconf load /org/gnome/terminal/ < shellectric-gnome-term-profile.dconf`
+  - Manually change to default in `Terminal` > `Preferences`
 - [Konsole](https://konsole.kde.org/): `Shellectric.colorscheme`
-  - depends, but for me: `~/.local/share/konsole/Shellectric.colorscheme`
+  - Import by copying to  `~/.local/share/konsole/Shellectric.colorscheme`
 - [iTerm2](https://www.iterm2.com/): `Shellectric.itermcolors`
   - Manual import `Profiles` > `Colors` > `Color Presets...` > `Import`
 - OSX Default: `Shellectric.terminal`

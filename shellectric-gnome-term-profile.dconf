@@ -1,0 +1,19 @@
+[/]
+bold-color-same-as-fg=true
+cursor-foreground-color='rgb(70,77,81)'
+highlight-foreground-color='rgb(70,77,81)'
+scrollbar-policy='never'
+background-color='rgb(70,77,81)'
+cursor-colors-set=true
+visible-name='shellectric'
+use-theme-colors=false
+cursor-background-color='rgb(78,163,126)'
+palette=['rgb(81,89,94)', 'rgb(228,126,113)', 'rgb(144,203,166)', 'rgb(246,198,147)', 'rgb(138,169,209)', 'rgb(191,148,195)', 'rgb(158,218,214)', 'rgb(148,161,168)', 'rgb(126,137,142)', 'rgb(246,129,158)', 'rgb(128,183,160)', 'rgb(249,153,126)', 'rgb(151,195,211)', 'rgb(197,162,192)', 'rgb(181,237,230)', 'rgb(197,200,198)']
+highlight-background-color='rgb(196,161,191)'
+cell-width-scale=1.0
+foreground-color='rgb(245,230,194)'
+cell-height-scale=1.0
+bold-is-bright=true
+highlight-colors-set=true
+audible-bell=false
+use-theme-transparency=false
